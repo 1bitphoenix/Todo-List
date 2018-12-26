@@ -37,34 +37,52 @@ class TodoListState extends State<TodoList> {
             )
           ]
         );
-}
+      }
     );
   }
 
   Widget _titleOfList(){
-    return TextField(
-      decoration: InputDecoration(
-        border: InputBorder.none,
-        hintText: 'Please enter a search term'
-      ),
+    return Padding(
+      padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+      child: TextField(
+        decoration: InputDecoration(
+          border: InputBorder.none,
+          hintText: 'Title',
+        ),
+        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueGrey, fontSize: 30.0),
+      )
     );
   }
 
   List<Widget> _buildTodoList() {
+
     List<Widget> _todoList = List();
     _todoList.add(_titleOfList());
+
     for(int i = 0 ; i < _todoItems.length; i++){
+
+      bool check = true;
+
       _todoList.add(Padding(
           padding: const EdgeInsets.all(20.0),
-          child:GestureDetector(
-            child: Text(_todoItems[i]),
+          child:Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+          Text(
+            _todoItems[i], 
+            style: TextStyle(fontSize: 20.0),
+          ),
+          GestureDetector(
             onTap: () => _promptRemoveTodoItem(i),
-          )
+            child: Icon(Icons.done, color: Colors.black)),
+        ],
+    ),
         )
       );
     }
     return _todoList;
   }
+
 
   @override
   Widget build(BuildContext context) {
