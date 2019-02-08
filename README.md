@@ -2,7 +2,10 @@
 A todo list app made with Flutter
 
 ### Adding Items
-<img src = "https://user-images.githubusercontent.com/29941303/50449244-048c9f80-094c-11e9-9b4c-6fa05986e105.gif">
+<img src = "https://user-images.githubusercontent.com/29941303/52488335-993e1a80-2be5-11e9-8eee-eb5e37449aff.gif">
+
+### Checking, unchecking Items
+<img src = "https://user-images.githubusercontent.com/29941303/52488348-a3601900-2be5-11e9-8651-e47d3a3ef749.gif">
 
 ### Deleting Items
-<img src = "https://user-images.githubusercontent.com/29941303/50449554-1ff8aa00-094e-11e9-80dd-06072fbeea47.gif">
+<img src = "https://user-images.githubusercontent.com/29941303/52488379-b5da5280-2be5-11e9-949a-b6bf5fb2e758.giff">
