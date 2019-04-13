@@ -4,7 +4,7 @@ import 'package:todo_app/models/todo_item.dart';
 
 class AddNewTodo extends StatelessWidget {
   DatabaseHelper dbHelper;
-  NewTodo() {
+  AddNewTodo() {
     dbHelper = DatabaseHelper();
   }
 
